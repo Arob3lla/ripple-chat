@@ -1,0 +1,95 @@
+.chatList {
+  flex: 1;
+  overflow-y: scroll;
+
+  .search {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    .searchBar {
+      flex: 1;
+      background-color: rgba(17, 25, 40, 0.5);
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      border-radius: 10px;
+      padding: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+
+      input {
+        background: transparent;
+        border: none;
+        outline: none;
+        color: white;
+      }
+
+      img {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .add {
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      background-color: rgba(17, 25, 40, 0.5);
+      width: 36px;
+      height: 36px;
+      padding: 10px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  }
+  .item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.125);
+
+    img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      border: 1px solid rgba(255, 255, 255, 0.125);
+      object-fit: cover;
+    }
+
+    .texts {
+      display: flex;
+      flex-direction: column;
+      gap: 7px;
+
+      span {
+        font-weight: 500;
+        letter-spacing: 0.4px;
+        font-size: 0.8rem;
+      }
+
+      p {
+        font-size: 10px;
+        font-weight: 300;
+      }
+    }
+  }
+}
+.chatList::-webkit-scrollbar {
+  width: 10px; /* width of the entire scrollbar */
+}
+
+.chatList::-webkit-scrollbar-track {
+  background: transparent; /* color of the tracking area */
+}
+
+.chatList::-webkit-scrollbar-thumb {
+  background-color: rgb(17, 25, 40); /* color of the scroll thumb */
+  border-radius: 10px; /* roundness of the scroll thumb */
+  border: 1px solid rgba(255, 255, 255, 0.125); /* creates padding around scroll thumb */
+}
